@@ -3,59 +3,48 @@
         "id": 1,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg",
-        "cols": 2
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/03/lugares-para-viajar-no-rio-de-janeiro-trindade.jpg"
     },
     {
-        "id": 1,
+        "id": 2,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/03/airbnb-em-ubatuba-vistaespetacularpraiadaalmada-scaled.jpg"
     },
     {
-        "id": 1,
+        "id": 3,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg"
+        "image": "https://emalgumlugardomundo.com.br/wp-content/uploads/2020/12/o-que-fazer-em-atibaia-13-scaled.jpg"
     },
     {
-        "id": 1,
+        "id": 4,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg",
-        "cols": 2
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/01/o-que-fazer-em-friburgo-14.jpg"
     },
     {
-        "id": 1,
+        "id": 5,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg",
-        "cols": 2
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/A_bel%C3%ADssima_Praia_do_Forno.jpg"
     },
     {
-        "id": 1,
+        "id": 6,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/04/o-que-fazer-em-praia-grande-sc-6.jpg"
     },
     {
-        "id": 1,
+        "id": 7,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg",
-        "cols": 2
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/05/cachoeiras-perto-de-sp-3.jpg"
     },
     {
-        "id": 1,
+        "id": 8,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg"
-    },
-    {
-        "id": 1,
-        "title": "Title one",
-        "description": "Description One",
-        "image": "https://material-ui/static/images/grid-list/star.jpg",
-        "cols": 2
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/05/krabi-railay-princess.jpg"
     }
 ]

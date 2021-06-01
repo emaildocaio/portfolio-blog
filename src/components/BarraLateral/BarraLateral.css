@@ -1,4 +1,22 @@
 aside {
     background-color: white;
     padding: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    list-style: none;   
+}
+
+a{
+    text-decoration: none;
+    color: initial;
+    cursor: pointer;
+}
+
+
+.hashtag {
+    margin-right: 30px;
 }

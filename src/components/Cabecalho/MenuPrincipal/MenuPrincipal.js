@@ -1,13 +1,19 @@
-import React from 'react';
-import './MenuPrincipal.css'
+import React, { useContext } from 'react';
+import {Link} from "react-router-dom";
+import './MenuPrincipal.css';
+
+import TemaContext from '../../../contexts/TemaContexts'
 
 const MenuPrincipal = () => {
+
+    const tema = useContext(TemaContext);
+
     return (
-        <nav>
+        <nav style={ { backgroundColor: tema.corFundoTema}}>
             <ul>
-                <li><a href="/lista-posts">Posts</a></li>
-                <li><a href="/categorias">Categorias</a></li>
-                <li><a href="/novo-post">Novo Post</a></li>
+                <li><Link to='/lista-posts'>Posts</Link></li>
+                <li><Link to='/lista-categorias'>Categorias</Link></li>
+                <li><Link to='/novo-post'>Novo Post</Link></li>
             </ul>
         </nav>
     )

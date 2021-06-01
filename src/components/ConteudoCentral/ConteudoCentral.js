@@ -1,4 +1,5 @@
 import React from 'react';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import './ConteudoCentral.css';
 import ListaPosts from './ListaPosts/ListaPosts';
 import ListaCategorias from './ListaCategorias/ListaCategorias';
@@ -8,10 +9,20 @@ const ConteudoCentral = () => {
     
     return (
         <main>
-            <h1>Conteudo Central</h1>
-            <ListaPosts/>
-            <ListaCategorias/>
-            <NovoPost/>
+
+            <Switch>
+
+                {/* Redirecionamento ROOT */}
+                <Route exact path="/">
+                    <Redirect to="/lista-posts"/>
+                </Route>
+
+                <Route path="/lista-posts"><ListaPosts/></Route>
+                <Route path="/lista-categorias"><ListaCategorias/></Route>
+                <Route path="/novo-post"><NovoPost/></Route>
+                
+                
+            </Switch>
 
         </main>
     )
