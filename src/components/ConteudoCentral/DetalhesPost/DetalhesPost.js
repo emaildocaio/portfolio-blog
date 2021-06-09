@@ -2,6 +2,8 @@ import React, { useEffect, useState }  from 'react';
 import { useHistory, useParams } from 'react-router-dom'
 import './DetalhesPost.css'
 import {getPostById} from '../../../services/postsService'
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
+import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 
 const Post = () => {
 
@@ -23,14 +25,17 @@ const Post = () => {
     return (
 
         <article>
-            <div>
-                <div className='p-categoria'>
-                    Categoria: Montanha
-                </div>
+            <div className = "card">
                 <img src = {postDetail.image} ></img>
+                <div className = "likes">
+                    <FavoriteBorderIcon/>23
+                    <ChatBubbleOutlineIcon/>10
+                </div>
+                <div className='p-categoria'>
+                    idCategoria: {postDetail.idCategoria}
+                </div>
+                <p>{postDetail.description}</p>
             </div>
-
-            {JSON.stringify(postDetail)}
         </article>
     )
 };

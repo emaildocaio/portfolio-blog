@@ -1,3 +1,28 @@
-.grid {
-    margin: 10px;
+main {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+    width: 450px;
+    background-color: white;
+    padding: 3em;
+    box-shadow: 0 0 1em #a9a9a9;
+}
+
+article div {
+    margin-top: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: space-between;
 }
