@@ -12,6 +12,6 @@ nav li {
 
 nav li a {
     text-decoration: none;
-    color: black;
+    color: inherit;
 
 }

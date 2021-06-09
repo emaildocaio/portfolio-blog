@@ -7,9 +7,6 @@ function App() {
   return (
     <div className="App">
       <PaginaInicial/>
-      <Button variant="contained" color="primary">
-      Hello World
-    </Button>
     </div>
   );
 }

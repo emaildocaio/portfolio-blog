@@ -3,48 +3,56 @@
         "id": 1,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/03/lugares-para-viajar-no-rio-de-janeiro-trindade.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/03/lugares-para-viajar-no-rio-de-janeiro-trindade.jpg",
+        "idCategoria": 1
     },
     {
         "id": 2,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/03/airbnb-em-ubatuba-vistaespetacularpraiadaalmada-scaled.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/03/airbnb-em-ubatuba-vistaespetacularpraiadaalmada-scaled.jpg",
+        "idCategoria": 2
     },
     {
         "id": 3,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://emalgumlugardomundo.com.br/wp-content/uploads/2020/12/o-que-fazer-em-atibaia-13-scaled.jpg"
+        "image": "https://emalgumlugardomundo.com.br/wp-content/uploads/2020/12/o-que-fazer-em-atibaia-13-scaled.jpg",
+        "idCategoria": 3
     },
     {
         "id": 4,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/01/o-que-fazer-em-friburgo-14.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/01/o-que-fazer-em-friburgo-14.jpg",
+        "idCategoria": 4
     },
     {
         "id": 5,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/A_bel%C3%ADssima_Praia_do_Forno.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/42/A_bel%C3%ADssima_Praia_do_Forno.jpg",
+        "idCategoria": 4
     },
     {
         "id": 6,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/04/o-que-fazer-em-praia-grande-sc-6.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/04/o-que-fazer-em-praia-grande-sc-6.jpg",
+        "idCategoria": 3
     },
     {
         "id": 7,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/05/cachoeiras-perto-de-sp-3.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/05/cachoeiras-perto-de-sp-3.jpg",
+        "idCategoria": 2
     },
     {
         "id": 8,
         "title": "Title one",
         "description": "Description One",
-        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/05/krabi-railay-princess.jpg"
+        "image": "https://cdnstatic8.com/emalgumlugardomundo.com.br/wp-content/uploads/2021/05/krabi-railay-princess.jpg",
+        "idCategoria": 2
     }
 ]

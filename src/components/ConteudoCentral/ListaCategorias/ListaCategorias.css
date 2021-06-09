@@ -1,0 +1,12 @@
+li {
+    display:list-item;
+}
+
+.categoria-linha {
+    display: flex;
+    padding: 1em;
+}
+
+.categoria-linha button {
+    margin: 0 1em;
+}

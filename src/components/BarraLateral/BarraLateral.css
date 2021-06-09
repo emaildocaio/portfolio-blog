@@ -3,16 +3,20 @@ aside {
     padding: 10px;
     margin-bottom: 30px;
     text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
 
-li{
-    display: inline-block;
-    list-style: none;   
+.lista-barra-lateral li{
+    display: inline;
+    list-style: none;
+    margin-right: 2em   
 }
+
 
 a{
     text-decoration: none;
-    color: initial;
+    color: inherit;
     cursor: pointer;
 }
 

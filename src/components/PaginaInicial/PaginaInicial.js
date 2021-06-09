@@ -7,34 +7,43 @@ import BarraLateral from '../BarraLateral/BarraLateral'
 import Rodape from '../Rodape/Rodape'
 
 import TemaContext from '../../contexts/TemaContexts'
+import { COR_1, COR_2} from "../../utils/coresTema"
 
 const PaginaInicial = () => {
     
     const temaDefault = {
-        corFundoTema: 'white'
+        corFundoTema: 'white',
+        corLetra: "black",
+
     }
-    
+
     const [tema, setTema] = useState(temaDefault);
 
-    const modificarTema = temaSelecionado => {
-        console.log(`Tema Selecionado: ${temaSelecionado}`);
+    const modificarTema = (temaSelecionado) => {
+        // console.log(`Tema Selecionado: ${temaSelecionado}`);
 
         switch(temaSelecionado){
-            case 'rosa': 
+            case COR_1: 
             // fazer lguma coisa
+            document.body.style.backgroundColor = "black";
                 setTema({
-                    corFundoTema: 'pink'
+                    corFundoTema: 'black',
+                    corLetra: "white"
                 });
             break;
-            case 'verde':
+            case COR_2:
                 // fazer lguma coisa
+                document.body.style.backgroundColor = "gray";
                 setTema({
-                    corFundoTema: 'green'
+                    corFundoTema: 'gray',
+                    corLetra:'white'
                 });
             break;
             default: 
             // branco
             // fazer alguma coisa
+            document.body.style.backgroundColor = "";
+
             setTema(temaDefault)
             break;
         }

@@ -1,18 +1,38 @@
-import React from 'react';
-import './Post.css'
+// import React, { useEffect, useState }  from 'react';
+// import { useHistory, useParams } from 'react-router-dom'
+// import './Post.css'
+// import {getPostById} from '../../../../services/postsService'
 
-const Post = () => {
-    return (
+// const Post = () => {
 
-        <article>
-            <div>
-                <div className='p-categoria'>
-                    Categoria: Montanha
-                </div>
-                <button className="btn-continua-lendo">Continue Lendo</button>
-            </div>
-        </article>
-    )
-};
+//     const { id } = useParams()
 
-export default Post;
+//     const [postDetail, setPostDetail] = useState({});
+
+//     useEffect(() => {
+//         const _postDetail = getPostById(id);
+//         setPostDetail(_postDetail)
+//     }, [])
+
+//     if (Object.keys(postDetail).length === 0){
+//         return (
+//             <div><p>Dados não encontrados!</p></div>
+//         )
+//     } 
+    
+//     return (
+
+//         <article>
+//             <div>
+//                 <div className='p-categoria'>
+//                     Categoria: Montanha
+//                 </div>
+//                 <img src = {postDetail.image} ></img>
+//             </div>
+
+//             {JSON.stringify(postDetail)}
+//         </article>
+//     )
+// };
+
+// export default Post;

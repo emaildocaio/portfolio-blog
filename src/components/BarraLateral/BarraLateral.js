@@ -1,17 +1,33 @@
-import React from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import {Link} from "react-router-dom";
 import './BarraLateral.css';
+import Busca from './Busca/Busca'
+import pegarCategorias from '../../utils/pegarCategorias'
+
+import TemaContext from '../../contexts/TemaContexts'
+
 
 const BarraLateral = () => {
     
+    var tema = useContext(TemaContext);
+
+    var [ categorias, setCategorias] = useState([]);
+
+    useEffect( () => {
+        pegarCategorias( setCategorias );
+    }, []);
+    
     return (
-        <aside>
-            <ul>
-                <li className="hashtag"><Link to='#'>#praias</Link></li>
-                <li className="hashtag"><Link to='#'>#montanhas</Link></li>
-                <li className="hashtag"><Link to='#'>#cidades</Link></li>
-                <li className="hashtag"><Link to='#'>#cachoeiras</Link></li>
-            </ul>
+        <aside style={ { backgroundColor: tema.corFundoTema, color: tema.corLetra}}>
+            
+            <ul className= "lista-barra-lateral">
+                { categorias.map( (item) => 
+                    <li key={item.id} >
+                        <Link to = {`/post-categoria/${item.id}`}> {item.descricao}</Link>
+                    </li>
+                )}
+            </ul>  
+            <Busca/>
         </aside>
     )
 };
