@@ -31,21 +31,24 @@ const ListaPosts = () => {
 
 
     return (
-        <div className="grid" style={ { backgroundColor: tema.corFundoTema, color: tema.corLetra}}>
-            <GridList cellHeight={300} cols={4}>
+        <>
+        
+        <div className="posts">
                 {lista.map((item) => (
-                <GridListTile key={item.image} cols={item.cols || 1}>
-                    <div>
-                        <div>
-                            <FavoriteBorderIcon/>
-                            <ChatBubbleOutlineIcon/>
-                        </div>
-                        <Link to={`/post/${item.id}`}><img src={item.image} alt={item.title}/></Link>
-                    </div>
-                </GridListTile>
+           
+                        <Link to={`/post/${item.id}`}>
+                            <div className="likes">
+                                <div>
+                                    <FavoriteBorderIcon/>
+                                </div>
+                                <img className="img-post" src={item.image} alt={item.title}/>
+                            </div>     
+                        </Link>
+           
             ))}
-            </GridList>
+           
         </div>
+        </>
     );
 };
 

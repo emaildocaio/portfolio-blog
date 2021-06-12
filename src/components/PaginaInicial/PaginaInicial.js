@@ -14,7 +14,6 @@ const PaginaInicial = () => {
     const temaDefault = {
         corFundoTema: 'white',
         corLetra: "black",
-
     }
 
     const [tema, setTema] = useState(temaDefault);
@@ -42,7 +41,7 @@ const PaginaInicial = () => {
             default: 
             // branco
             // fazer alguma coisa
-            document.body.style.backgroundColor = "";
+            document.body.style.backgroundColor = "white";
 
             setTema(temaDefault)
             break;

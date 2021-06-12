@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import './BarraLateral.css';
 import Busca from './Busca/Busca'
 import pegarCategorias from '../../utils/pegarCategorias'
+import SearchIcon from '@material-ui/icons/Search';
 
 import TemaContext from '../../contexts/TemaContexts'
 
@@ -26,8 +27,9 @@ const BarraLateral = () => {
                         <Link to = {`/post-categoria/${item.id}`}> {item.descricao}</Link>
                     </li>
                 )}
-            </ul>  
-            <Busca/>
+                <li><SearchIcon/></li>
+            </ul>
+            <hr></hr>  
         </aside>
     )
 };

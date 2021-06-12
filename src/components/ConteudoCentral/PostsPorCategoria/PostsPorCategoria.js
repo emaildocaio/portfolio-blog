@@ -57,6 +57,7 @@ const ListaPosts = () => {
                 </GridListTile>
             ))}
             </GridList>
+            
         </div>
     );
 };

@@ -28,7 +28,7 @@ const ConteudoCentral = () => {
                 <Route exact path="/">
                     <Redirect to="/lista-posts"/>
                 </Route>
-
+            
                 <Route path="/lista-posts"><ListaPosts/></Route>
                 <Route path="/lista-categorias"><ListaCategorias lista = { categorias} /></Route>
                 <Route path="/novo-post"><NovoPost/></Route>
