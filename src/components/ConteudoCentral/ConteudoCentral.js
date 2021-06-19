@@ -31,7 +31,7 @@ const ConteudoCentral = () => {
             
                 <Route path="/lista-posts"><ListaPosts/></Route>
                 <Route path="/lista-categorias"><ListaCategorias lista = { categorias} /></Route>
-                <Route path="/novo-post"><NovoPost/></Route>
+                <Route path="/novo-post"><NovoPost categorias = {categorias} /></Route>
 
                 <Route path="/post/:id"><DetalhesPost/></Route>
                 {/* <Route path="/post/:id" component = { Post } /> */}

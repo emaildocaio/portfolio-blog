@@ -8,9 +8,13 @@ import {Link, useHistory} from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
+import IconButton from '@material-ui/core/IconButton';
+
+
 
 
 import TemaContext from '../../../contexts/TemaContexts'
+import { identity } from 'lodash';
 
 
 const ListaPosts = () => {
@@ -23,11 +27,32 @@ const ListaPosts = () => {
     const tema = useContext(TemaContext);
     const [lista, setLista ] = useState([]);
 
+    const [listaCurtida, setListaCurtida] = useState([]);
 
     useEffect(() => {
         const listaResult = getPost();
         setLista(listaResult);
     }, []);
+
+    const toggleLike = (id) => {
+        const indexCurtida = listaCurtida.indexOf(id);
+        let novaListaCurtida = [...listaCurtida]
+        
+        const indexPostCurtido = lista.findIndex((item) => {
+            return item.id === id
+        })
+        let _lista = [...lista]
+
+        if (indexCurtida > -1) {
+            novaListaCurtida.splice(indexCurtida, 1)
+            _lista[indexPostCurtido].likes -= 1;
+        } else {
+            novaListaCurtida.push(id);
+            _lista[indexPostCurtido].likes += 1;
+        }
+        setListaCurtida(novaListaCurtida);
+        setLista(_lista);
+    };
 
 
     return (
@@ -35,15 +60,19 @@ const ListaPosts = () => {
         
         <div className="posts">
                 {lista.map((item) => (
-           
+                    <>
                         <Link to={`/post/${item.id}`}>
-                            <div className="likes">
-                                <div>
-                                    <FavoriteBorderIcon/>
-                                </div>
+                            <div className="likes"> 
                                 <img className="img-post" src={item.image} alt={item.title}/>
                             </div>     
                         </Link>
+                        <div>
+                            <IconButton onClick = {() => toggleLike(item.id)}>
+                                {listaCurtida.indexOf(item.id) > -1 ? <FavoriteIcon/> : <FavoriteBorderIcon/>} 
+                            </IconButton>{item.likes}
+
+                        </div>
+                    </>
            
             ))}
            

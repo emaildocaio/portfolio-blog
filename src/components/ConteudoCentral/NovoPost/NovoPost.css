@@ -1,0 +1,21 @@
+.inserir-bloco {
+    display: block;
+}
+
+.np-campo{
+    margin-top: 10px;
+}
+
+.np-campo label{
+    display: block;
+}
+
+.np-campo input,
+.np-campo select,
+.np-campo textarea{
+    width: 200px;    
+}
+
+#np > form > button {
+    margin-top: 20px;
+}

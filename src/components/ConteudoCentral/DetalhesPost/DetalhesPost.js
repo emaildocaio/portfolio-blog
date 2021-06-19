@@ -28,8 +28,7 @@ const Post = () => {
             <div className = "card">
                 <img src = {postDetail.image} ></img>
                 <div className = "likes">
-                    <FavoriteBorderIcon/>23
-                    <ChatBubbleOutlineIcon/>10
+                    <FavoriteBorderIcon/><p>{postDetail.likes}</p>
                 </div>
                 <div className='p-categoria'>
                     idCategoria: {postDetail.idCategoria}
