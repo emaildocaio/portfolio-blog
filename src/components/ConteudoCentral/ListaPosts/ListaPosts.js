@@ -3,7 +3,7 @@ import { GridList, GridListTile} from '@material-ui/core';
 import React, {useState, useContext, useEffect} from 'react';
 import './ListaPosts.css'
 import Post from './Post/Post';
-import {getPost} from '../../../services/postsService'
+import {getAllPosts} from '../../../services/postsService';
 import {Link, useHistory} from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
@@ -29,9 +29,14 @@ const ListaPosts = () => {
 
     const [listaCurtida, setListaCurtida] = useState([]);
 
+    const listaPosts = async () => {
+        const resultado = await getAllPosts();
+        const _listaPosts = resultado.data
+        setLista(_listaPosts);
+    };
+
     useEffect(() => {
-        const listaResult = getPost();
-        setLista(listaResult);
+        listaPosts()
     }, []);
 
     const toggleLike = (id) => {
@@ -75,7 +80,6 @@ const ListaPosts = () => {
                     </>
            
             ))}
-           
         </div>
         </>
     );

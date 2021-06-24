@@ -3,7 +3,7 @@ import { GridList, GridListTile} from '@material-ui/core';
 import React, {useState, useContext, useEffect} from 'react';
 import './PostsPorCategoria.css'
 import Post from '../ListaPosts/Post/Post';
-import {getPost} from '../../../services/postsService'
+import {getAllPosts} from '../../../services/postsService'
 import { useParams } from 'react-router'
 import {Link, useHistory} from 'react-router-dom';
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -30,7 +30,7 @@ const ListaPosts = () => {
     const[listaPostFiltrado, setListaPostFiltrado] = useState([]);
 
     useEffect(() => {
-        const listaResult = getPost();
+        const listaResult = getAllPosts();
         setLista(listaResult);
     }, []);
 

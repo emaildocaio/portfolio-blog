@@ -1,10 +1,11 @@
-import dataList from '../json/data.json'
+import axios from '../axios/axios';
+import dataList from '../json/data.json';
 
-export const getPost = () => dataList;
+export const getAllPosts = () => axios.get('/pics');
 
 export const getPostById = ( id ) => {
-    const dataListFind = dataList.find( (item) => {
-        return item.id.toString() === id
-    })
-    return dataListFind || {};
+    // const dataListFind = dataList.find( (item) => {
+    //     return item.id.toString() === id
+    // })
+    axios.get(`/pics/${id}`);
 } 

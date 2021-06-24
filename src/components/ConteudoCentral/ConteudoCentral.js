@@ -8,14 +8,20 @@ import Post from './ListaPosts/Post/Post'
 import DetalhesPost from './DetalhesPost/DetalhesPost'
 import PostsPorCategoria from './PostsPorCategoria/PostsPorCategoria'
 import pegarCategorias from '../../utils/pegarCategorias'
+import pegarPosts from '../../utils/pegarPosts'
 
 
 const ConteudoCentral = () => {
     
+    const [ posts, setPosts ] = useState([]);
     const [ categorias, setCategorias] = useState([]);
 
     useEffect( () => {
         pegarCategorias( setCategorias );
+    }, []);
+
+    useEffect( () => {
+        pegarPosts( setPosts );
     }, []);
 
 
@@ -29,7 +35,7 @@ const ConteudoCentral = () => {
                     <Redirect to="/lista-posts"/>
                 </Route>
             
-                <Route path="/lista-posts"><ListaPosts/></Route>
+                <Route path="/lista-posts"><ListaPosts lista = { posts }/></Route>
                 <Route path="/lista-categorias"><ListaCategorias lista = { categorias} /></Route>
                 <Route path="/novo-post"><NovoPost categorias = {categorias} /></Route>
 
